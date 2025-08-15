@@ -5,3 +5,6 @@ pixi.lock
 
 # Data is too big
 data/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
