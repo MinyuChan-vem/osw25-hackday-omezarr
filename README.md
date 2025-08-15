@@ -19,3 +19,5 @@ pip install "matplotlib" "jupyterlab" "numcodecs==0.15.1" "numpy==2.3.2" "zarr==
 ```shell
 pip install "napari[all]" "napari-ome-zarr"
 ```
+
+### Pixi
