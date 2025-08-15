@@ -1,8 +1,12 @@
 # Omezarr Group
 
+Explore different Ome-Zarr implementations for converting and working with large-scale imaging data.
+
+We tested various configurations to convert a multi-page TIFF file into the Ome-Zarr format.
+
 ## Installation
 
-### Conda
+### Conda (dask env)
 
 ```shell
 conda create -n big-imaging-data-tutorial python=3.13 -y
@@ -19,3 +23,11 @@ pip install "matplotlib" "jupyterlab" "numcodecs==0.15.1" "numpy==2.3.2" "zarr==
 ```shell
 pip install "napari[all]" "napari-ome-zarr"
 ```
+
+### Pixi
+
+```shell
+pixi install -e <env-name>
+```
+
+Possible envs are `ngio` `ngff-zarr` `ome-zarr` `stack-to-chunk` `bioio`

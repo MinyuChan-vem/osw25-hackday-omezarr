@@ -1,7 +1,7 @@
 from bioio import BioImage, plugin_feasibility_report
 from pathlib import Path
 
-tiff_image_path = Path.home()/"data/neuron-data/Human_neuron.tif"
+tiff_image_path = Path("data") / "Human_neuron.tif"
 assert tiff_image_path.exists()
 print(plugin_feasibility_report(tiff_image_path))
 
@@ -35,7 +35,7 @@ print(chunks)
 
 # Initialize writer
 writer = OmeZarrWriterV2()
-write_path = Path.home()/"data/neuron_slash.ome.zarr"
+write_path = Path("data") / "Human_neuron_bioio.zarr"
 writer.init_store(
     output_path=str(write_path),
     shapes=shapes,
