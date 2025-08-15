@@ -29,7 +29,7 @@ ngio = ["ngio"]
 ngff-zarr = ["ngff-zarr"]
 ome-zarr = ["ome-zarr"]
 stack-to-chunk = ["stack-to-chunk"]
-bioio = ["bioio"]
+bioio = ["bioio", "bioio-ome-zarr", "bioio-tifffile"]
 
 [build-system]
 build-backend = "hatchling.build"
